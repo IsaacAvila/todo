@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h1>Editing Todo List</h1>
+  </div>
+  <div class="col-sm-3 offset-3">
+    <div class="btn-group btn-group-toggle col-sm-6 offset-sm-6">        
+      <%= link_to 'Show', @todo_list, class: "btn btn-primary btn-sm"%>
+      <%= link_to 'Back', todo_lists_path, class: "btn btn-primary btn-sm" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <%= render 'form', todo_list: @todo_list %>
+  <%= image_tag("diy.jpg", :alt => "DIY", class: "col-sm-6 rounded img-do-it") %>
+</div>
